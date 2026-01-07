@@ -55,6 +55,70 @@
 <img width="705" height="158" alt="Screenshot 2026-01-07 213900" src="https://github.com/user-attachments/assets/8c5874de-25fc-4cec-8a0a-d327e1edf130" />
 
 
-## Итог над первым заданием
+## Итог работы над первым заданием
 
 Я создал скрипт, который успешно запретил коммитить пустой файл формата .txt, но при этом разрешил коммит непустого файла с подписью. Именно то, что мне и было нужно. Переёдйм к заданию номер 2. 
+
+## Ход работы над вторым заданием
+
+В этом задании нужно было работать с git flow по алгоритму.
+
+### 1. Создал директорию для этого задания и сделал её гит репозиторием при промощи ```git init```
+
+### 2. Добавил в корень репозитория файл README.md и закоммитил его
+
+<img width="876" height="398" alt="Screenshot 2026-01-07 225017" src="https://github.com/user-attachments/assets/d11878cc-0e55-4a44-a29b-23aea2c04b8b" />
+
+### 3. Добавил Git flow при помощи команды ```git flow inin -d```, флаг d отвечает за выбор настроек по умолчанию
+
+### 4. Создал новую ветку task-management для файла с функцией для слежения за разработкой
+
+
+<img width="875" height="255" alt="Screenshot 2026-01-07 225116" src="https://github.com/user-attachments/assets/4d02271f-4589-4d3e-ad2e-4fd0d734c44b" />
+
+### 5. Прямо через консоль написал простяший python файл и сделал коммит 
+
+<img width="776" height="78" alt="Screenshot 2026-01-07 225406" src="https://github.com/user-attachments/assets/cbf48490-5936-4437-a535-a56443ed1994" />
+
+### 6. Завершил ветку task-management и слил всё вместе
+
+
+<img width="808" height="336" alt="Screenshot 2026-01-07 225851" src="https://github.com/user-attachments/assets/dd56fa9e-3b16-4db4-96bc-6ad2239d6a44" />
+
+### 7. Созал ветку Release на основе develop и переключился на неё
+
+### 8. Обновил версию сделал коммит 
+
+```
+echo "version1" > version.txt
+git add version.txt
+git commit -m "Updated release version to version1"
+```
+
+### 9. Слил ветку Release и проверил логи (прикрепляю скрин с логами к этому моменту)
+
+```
+git flow release finish v1.0.0
+
+```
+
+<img width="921" height="126" alt="Screenshot 2026-01-07 230344" src="https://github.com/user-attachments/assets/fb203275-b62c-4255-8378-32e8a534301a" />
+
+### 10. Создал hotfix и сделал исправление (так как ошибок на самом деле не возникало, проосто добавил файл file_with_error.py)
+
+
+<img width="853" height="241" alt="Screenshot 2026-01-07 230741" src="https://github.com/user-attachments/assets/df423ae2-29f2-4348-a6d2-0ad27d6ec0bd" />
+
+### 11. Завершил hotfix и посмотрел логи на этот момент 
+
+<img width="932" height="192" alt="Screenshot 2026-01-07 230912" src="https://github.com/user-attachments/assets/375d2957-7a8d-47a0-a598-c2d149edc61d" />
+
+### 12. Запушил всё на пустой git репозиторий 
+
+### Проблема
+
+В ходе выполнения этой части лабортаорной, у меня возникли сложности с тегами, оказалось их надо прописывать отдельно через nano и тоже пушить на удалённый репозиторий
+
+## Итог работы над вторым заданием
+
+В итоге удалось успешно пройти по всем этапам работы с git flow, указанным в задании. 
